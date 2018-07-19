@@ -1,0 +1,51 @@
+<?php
+function showNav($args) {
+	$here = (isset($args['here']) ? $args['here'] : '');
+	$under = (isset($args['under']) ? $args['under'] : 'nothing');
+	$base = (isset($args['base']) ? $args['base'] : '');
+	$mottos = array("Lift up your brother","Help those in need","Feed my lambs, tend my sheep","Loving means lending a hand","To the least of these" );
+	$showthis = $mottos[time() % count($mottos)];
+	$thisa = 'nohref="nohref" class="this"';
+?>
+	<a href="#top" id="skipnav" class="dyn cpair1">Skip Navigation</a>
+	<div id="header">
+		<img src="lsl-logo.png" />
+		<br /><span class="lnudge">Love Your Neighbor</span>
+	</div>
+	<div id="navigation">
+		<span><?php echo $showthis ?></span>
+		<a <?php echo ($here == "index" ? $thisa : 'href="' . $base . 'index.php"') ?>>Home</a>
+<?php if ($here == "who") { ?>
+		<a nohref="nohref" class="this"
+<?php } else { ?>
+		<a <?php	if ($under == "who") { ?>class="under"<?php }
+echo ' href="' . $base . 'who.php"';
+ } ?>>Who We Are</a>
+		<a <?php echo ($here == "what" ? $thisa : 'href="' . $base . 'what.php"') ?>>What We're About</a>
+<?php if ($here == "involve") { ?>
+		<a nohref="nohref" class="this"
+<?php } else { ?>
+		<a<?php	if ($under == "involve") { ?> class="under"<?php	}
+echo ' href="' . $base . 'involve.php"';
+ } ?>>Get Involved</a>
+<?php if ($here == "contact") { ?>
+		<a nohref="nohref" class="this"
+<?php } else { ?>
+		<a<?php	if ($under == "contact") { ?> class="under"<?php	}
+echo ' href="' . $base . 'contact.php"';
+ } ?>>Contact Us</a>
+<?php if ($here == '404') { ?>
+		<a nohref="nohref" class="this">Oops!</a>
+<?php } ?>
+<?php if (preg_match('/thissite.com$|localhost|127.0.0.1/',$_SERVER['SERVER_NAME'])) { ?>
+		<a href="http://www.thissite.com/">Return to Brit Ahm</a>
+<?php } ?>
+	</div>
+	<p><a name="top">&nbsp;</a></p>
+	<div id="content">
+<!--[if lt IE 9]>
+		<p class="oops">Warning: Your browser is not displaying this Web site correctly. Improve your Web browsing experience: <a href="http://www.getfirefox.org/">Get Firefox</a></p>
+<![endif]-->
+	<p class="dyn">&nbsp;</p><a href="mailto:love@thissite.com" title="Webcontact" id="actbut"><?php if($here == 'involve') { ?>Give<?php } else { ?>Request<?php } ?> Help</a>
+<?php } ?>
+

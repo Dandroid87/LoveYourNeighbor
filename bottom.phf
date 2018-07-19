@@ -1,0 +1,26 @@
+<?php
+function showFoot($update) {
+?>
+		<h1 class="clr">About LYN</h1>
+		<p>Love Your Neighbor is a group...</p>
+	</div>
+	<div id="contact">
+		To reach us, send an e-mail to <a href="mailto:love@thissite.com" title="Webcontact">love@thissite.com</a>.
+	</div>
+	<div id="footer">
+		<p>This Web site was designed using Linux and other open source software.</p>
+		Best viewed in a standards-compliant Web browser.
+		<p>All site content is &copy; copyright 2018 by Love Your Neighbor unless otherwise noted. All rights reserved. Love Your Neighbor is solely responsible for the contents of this Web site.</p>
+	</div>
+	<div id="update">
+		This page was last updated on <?php echo $update ?>.
+	</div>
+<!--[if lt IE 7]>
+	</div>
+<![endif]-->
+<div class="spacer dyn">&nbsp;</div>
+<div class="spacer dyn">&nbsp;</div>
+</body>
+
+</html>
+<?php } ?>

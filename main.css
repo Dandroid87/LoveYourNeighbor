@@ -1,6 +1,5 @@
 /* Main Template Stylesheet */
 /* by Lincoln Sayger */
-/* Does your church need a Web site update? Send an e-mail to lessthanorequal@cox.net */
 
 /* resets */
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
@@ -15,3 +14,22 @@ a:visited { color: #003399; }
 a:active { background-color: #006666; color: #ffccff; }
 a.mainmenu, a.mainmenu:link { text-align: center; float: left; width: 105px; white-space: normal; }
 a.mainmenu img { border: 1px solid #0f0; display: block; margin-bottom: 2px; width: 100px; height: 100px; }
+
+.nowrap, .nobr { white-space: nowrap; }
+blockquote { display: block; margin: 0 2% 0 5%; }
+dl { display: block; margin-left: 95px; }
+.allcaps { text-transform: uppercase; }
+.clr { clear: both; }
+.cro { clear: right; }
+.inline, ul.inline li { display: inline; }
+.block { display: block; }
+.w30 { width: 30%; }
+.w50 { width: 50%; }
+.w60 { width: 60%; }
+.w80 { width: 80%; }
+.fl { float: left; display: inline-block; }
+.fr { float: right; display: inline-block; }
+.nomar { margin: 0; padding: 0; text-indent: 0; }
+.flushr { text-align: right; }
+.col1 { float: left; width: 22%; display: block; }
+.col2 { float: left; width: 48%; display: block; }
