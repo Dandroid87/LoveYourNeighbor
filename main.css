@@ -1,0 +1,17 @@
+/* Main Template Stylesheet */
+/* by Lincoln Sayger */
+/* Does your church need a Web site update? Send an e-mail to lessthanorequal@cox.net */
+
+/* resets */
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+body, p, a, div, span, img, strong, em { border-width: 0px; line-height: 1.1em; font-size: 100%;  }
+
+/* globals */
+body { background-color: #fff; color: #000; }
+a { color: #0000cc; }
+a:link { white-space: nowrap; }
+a:hover { background-color: #006666; }
+a:visited { color: #003399; }
+a:active { background-color: #006666; color: #ffccff; }
+a.mainmenu, a.mainmenu:link { text-align: center; float: left; width: 105px; white-space: normal; }
+a.mainmenu img { border: 1px solid #0f0; display: block; margin-bottom: 2px; width: 100px; height: 100px; }

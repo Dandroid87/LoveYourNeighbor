@@ -1,0 +1,8 @@
+/* Fixes for MSIE */
+/* by Lincoln Sayger */
+
+body { height: 100%; overflow: hidden; }
+#ie6 { height: 92%; width: 101%; overflow-x: hidden; overflow-y: auto;  }
+#ie6 #content { width: 99%; float: left; }
+#ie6 #smallcontent { width: 96%; margin-top: 5%; float: none; }
+#footer { top: 50%; position: relative; }

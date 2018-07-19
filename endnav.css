@@ -1,0 +1,19 @@
+/* Top Navigation Bar Style Sheet */
+/* by Lincoln Sayger */
+
+h1, h2, h3, h4, h5, h6, p { padding: 2px 0 4px 0; line-height: 1.1em; }
+#content { width: 100%; padding: 52px 2px 2px 2px; margin-top: 53px; }
+#smallcontent { width: 100%; padding: 3px; font-size: 1em; line-height: 1.1em; color: #033; }
+#smallcontent p { text-indent: 0px; font-family: "Bitstream Vera Sans", helvetica, sans-serif; margin: 0 1em 0 1em; font-size: 0.75em; float: left; }
+#footer { float: left; padding: 2px; margin-left: 15%; font-size: 0.75em; font-family: helvetica, sans-serif; margin-bottom: 7em; height: 5em; }
+#header { position: fixed; left: 0px; top: 0px; width: 100%; height: 51px; background-color: #09c; z-index: 5; _position: absolute; font-family: "Impact", courier, serif; font-size: 1.25em; } /* _position: absolute; is a hack for MSIE */
+#navigation { position: fixed; left: 0px; top: 89%; width: 100%; height: 7em; background-color: #099; padding: 4px; z-index: 5; _position: absolute; font-family: "Verdana", veranda, sans-serif; } /* _position: absolute; is a hack for MSIE */
+#navigation a { display: inline; float: left; margin: 2px 5px 5px 2px; padding: 5px; border-style: solid; border-width: 1px; border-color: #00f; text-decoration: none; color: #fff; background: url('buttonback.png'); }
+#navigation a:hover { border-style: solid; border-width: 3px; margin: 0px 3px 3px 0px; padding: 5px 5px 5px 5px; border-color: #00f; background-color: #0f0; background-position: 0px -100px; }
+#header img { float: left; background-color: #6699ff; position: relative; left: 15px;}
+#header span { font-size: 1.1em; position: relative; top: -10px; }
+#contact { text-align: center; display: block; top: -1em; position: relative; }
+#update { clear: both; text-align: right; top: 1em; position: relative; margin-bottom: 5em; }
+#design { clear: both; font-weight: bold; top: -6.4em; position: relative; margin-bottom: 5em; }
+.spacer { display: block; clear: both; height: 7em; }
+.lnudge { position: relative; left: 5%;}
