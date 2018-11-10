@@ -3,17 +3,17 @@ function showNav($args) {
 	$here = (isset($args['here']) ? $args['here'] : '');
 	$under = (isset($args['under']) ? $args['under'] : 'nothing');
 	$base = (isset($args['base']) ? $args['base'] : '');
-	$mottos = array("Lift up your brother","Help those in need","Feed my lambs, tend my sheep","Loving means lending a hand","To the least of these" );
+	$mottos = array("Lift up your brother","Help those in need","Feed my lambs, tend my sheep","Loving means lending a hand","To the least of these","Love your neighbor as yourself" );
 	$showthis = $mottos[time() % count($mottos)];
 	$thisa = 'nohref="nohref" class="this"';
 ?>
 	<a href="#top" id="skipnav" class="dyn cpair1">Skip Navigation</a>
 	<div id="header">
-		<img src="lsl-logo.png" />
+		<img src="img/lyn-logo.jpg" />
 		<br /><span class="lnudge">Love Your Neighbor</span>
 	</div>
 	<div id="navigation">
-		<span><?php echo $showthis ?></span>
+		<span class="motto"><?php echo $showthis ?></span>
 		<a <?php echo ($here == "index" ? $thisa : 'href="' . $base . 'index.php"') ?>>Home</a>
 <?php if ($here == "who") { ?>
 		<a nohref="nohref" class="this"
@@ -27,7 +27,8 @@ echo ' href="' . $base . 'who.php"';
 <?php } else { ?>
 		<a<?php	if ($under == "involve") { ?> class="under"<?php	}
 echo ' href="' . $base . 'involve.php"';
- } ?>>Get Involved</a>
+ } ?>>Volunteer</a>
+		<a <?php echo ($here == "donate" ? $thisa : 'href="' . $base . 'donate.php"') ?>>Donate</a>
 <?php if ($here == "contact") { ?>
 		<a nohref="nohref" class="this"
 <?php } else { ?>
@@ -37,8 +38,8 @@ echo ' href="' . $base . 'contact.php"';
 <?php if ($here == '404') { ?>
 		<a nohref="nohref" class="this">Oops!</a>
 <?php } ?>
-<?php if (preg_match('/thissite.com$|localhost|127.0.0.1/',$_SERVER['SERVER_NAME'])) { ?>
-		<a href="http://www.thissite.com/">Return to Brit Ahm</a>
+<?php if (preg_match('/shalompensacola.com$|localhost|127.0.0.1/',$_SERVER['SERVER_NAME'])) { ?>
+		<a href="http://www.shalompensacola.com/">Return to Brit Ahm</a>
 <?php } ?>
 	</div>
 	<p><a name="top">&nbsp;</a></p>
@@ -46,6 +47,6 @@ echo ' href="' . $base . 'contact.php"';
 <!--[if lt IE 9]>
 		<p class="oops">Warning: Your browser is not displaying this Web site correctly. Improve your Web browsing experience: <a href="http://www.getfirefox.org/">Get Firefox</a></p>
 <![endif]-->
-	<p class="dyn">&nbsp;</p><a href="mailto:love@thissite.com" title="Webcontact" id="actbut"><?php if($here == 'involve') { ?>Give<?php } else { ?>Request<?php } ?> Help</a>
+	<p class="dyn">&nbsp;</p><a href="mailto:love@thissite.com" title="Webcontact" id="actbut" class="fr rnudge"><?php if($here == 'involve') { ?>Give<?php } else { ?>Request<?php } ?> Help</a>
 <?php } ?>
 

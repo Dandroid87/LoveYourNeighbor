@@ -13,6 +13,10 @@ bin/
 gen/
 out/
 
+# PN files
+*.pnproj
+*.pnps
+
 # Gradle files
 .gradle/
 build/
